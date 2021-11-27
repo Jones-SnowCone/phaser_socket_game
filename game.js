@@ -1,5 +1,3 @@
-const { create } = require("domain");
-
 const config = {
     type: Phaser.AUTO,
     parent: "phaser-example",
