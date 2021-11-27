@@ -23,7 +23,7 @@ io.on("connection", (socket) => {
     // send the players object to the new player
     socket.emit("currentPlayers", players);
     // update all other players of the new player
-    socket.broadcase.emit("newPlayer", players[socket.id]);
+    socket.broadcast.emit("newPlayer", players[socket.id]);
     socket.on("disconnet", () => {
         console.log("user disconneted");
         // remove this player from our players object
