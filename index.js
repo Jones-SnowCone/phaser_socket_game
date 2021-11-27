@@ -12,9 +12,9 @@ app.get("/", (req, res) => {
 io.on("connection", (socket) => {
     console.log("user connected");
     socket.on("disconnet", () => {
-        console.log("user disconneted")
-    })
-})
+        console.log("user disconneted");
+    });
+});
 
 server.listen(3000, () => {
     console.log(`listening on ${server.address().port}`);
