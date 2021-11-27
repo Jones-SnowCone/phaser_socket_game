@@ -8,7 +8,7 @@ const io = new Server(server);
 var players = {};
 
 app.get("/", (req, res) => {
-    res.sendFile(_dirname + "/index.html");
+    res.sendFile(__dirname + "/index.html");
 });
 
 io.on("connection", (socket) => {
